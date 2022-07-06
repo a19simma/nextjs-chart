@@ -1,9 +1,11 @@
+import Body from "../components/Body";
+import Title from "../components/Title";
+
 export default function () {
   return (
-    <div>
-      <a href="https://www.freepik.com/vectors/background">
-        Background vector created by freepik - www.freepik.com
-      </a>
-    </div>
+    <>
+      <Title>About Me</Title>
+      <Body title="About Me">Text text and more Text</Body>
+    </>
   );
 }

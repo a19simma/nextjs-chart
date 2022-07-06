@@ -1,29 +1,15 @@
+import Link from "./Link";
+import UserIcon from "./UserIcon";
+
 export default function () {
   return (
     <>
-      <nav className="bg-gray-800 ">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="flex space-x-4">
-              <a
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="#"
-              >
-                Home
-              </a>
-              <a
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="#"
-              >
-                About
-              </a>
-              <a
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="#"
-              >
-                Posts
-              </a>
-            </div>
+      <nav className="absolute top-0 w-full  bg-gray-900 h-10 px-2">
+        <div className="max-w-7xl w-full mx-auto md:w-4/5">
+          <div className="">
+            <Link text="Home" href="/" />
+            <Link text="About" href="/about" />
+            <UserIcon />
           </div>
         </div>
       </nav>

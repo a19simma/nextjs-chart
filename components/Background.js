@@ -1,9 +1,7 @@
-function Background(props) {
+export default function ({ children }) {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-cyan-500 to-purple-500 ">
-      {props.children}
+    <div className="mt-10 min-h-[calc(100vh_-_5rem)] bg-gradient-to-b from-gray-800 via-gray-400 to-gray-800 ">
+      {children}
     </div>
   );
 }
-
-export default Background;

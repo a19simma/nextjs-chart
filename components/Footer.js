@@ -1,7 +1,7 @@
 export default function () {
   return (
-    <footer className="bg-gray-800 bottom-0 inset-x-0 h-12">
-      <p className="relative right-0 bottom-0 text-gray-300">
+    <footer className="sticky -bottom-10 w-full bg-gray-900 h-10">
+      <p className="text-gray-300 w-full text-right m-auto py-1 px-2 md:w-4/5">
         &copy; 2022 Simon Malm
       </p>
     </footer>
