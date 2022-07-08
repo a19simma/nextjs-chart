@@ -1,7 +1,6 @@
-import Navbar from "../components/Navbar";
-import Link from "../components/Link";
-import Footer from "../components/Footer";
-import Background from "../components/Background";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Background from "./Background";
 
 export default function Layout({ children }) {
   return (

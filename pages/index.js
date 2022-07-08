@@ -4,7 +4,7 @@ import Body from "../components/Body";
 export default function Home() {
   return (
     <div>
-      <Title text="Welcome" />
+      <Title>Welcome</Title>
       <Body title="Hello There">This is the main body of the page.</Body>
     </div>
   );
