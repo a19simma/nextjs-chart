@@ -14,7 +14,7 @@ export default function () {
   return (
     <div>
       <div
-        className="relative float-right w-12 h-10 rounded-sm cursor-pointer hover:bg-gray-700"
+        className="relative float-right w-12 h-10 rounded-sm cursor-pointer hover:bg-gray-500"
         title={session ? session.user.name : "undefined"}
       >
         <button

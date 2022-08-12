@@ -4,7 +4,7 @@ export default function Button({ onclick, text }) {
       <div>
         <button
           onClick={onclick}
-          className="mx-auto hover:bg-gray-700 hover:text-white px-3 py-2 border-slate-800 border-2 rounded-sm text-sm font-medium cursor-pointer"
+          className="text-white mx-auto hover:bg-stone-500 px-3 py-2 border-white border-2 rounded-sm text-sm font-medium cursor-pointer"
         >
           {text}
         </button>

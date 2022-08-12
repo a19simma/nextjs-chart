@@ -11,6 +11,8 @@ export default function CreateChart({ size, data }) {
   const cornerRef = useRef(null);
   const labelRef = useRef(null);
 
+  let chart;
+
   useEffect(() => {
     const ui_elements = [
       rowRef.current,
@@ -26,7 +28,7 @@ export default function CreateChart({ size, data }) {
     if (Object.entries(data).length == 0) {
       console.error("No data");
     } else {
-      const chart = new CandleStickChart(data, canvas, size, ui_elements);
+      chart = new CandleStickChart(data, canvas, size, ui_elements);
     }
   }, [size]);
 
@@ -37,7 +39,7 @@ export default function CreateChart({ size, data }) {
           <td className="relative p-0">
             <canvas className="z-0" ref={canvasRef}></canvas>
             <canvas
-              className="z-10 absolute top-2 left-2"
+              className="z-10 absolute top-0 left-0"
               ref={labelRef}
             ></canvas>
             <canvas

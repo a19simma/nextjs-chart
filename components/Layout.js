@@ -4,11 +4,11 @@ import Background from "./Background";
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <Navbar />
+    <div className="absolute min-w-full min-h-full">
       <Background>
         <main>{children}</main>
       </Background>
+      <Navbar />
       <Footer />
     </div>
   );

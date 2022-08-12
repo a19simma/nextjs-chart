@@ -1,6 +1,6 @@
 export default function Background({ children }) {
   return (
-    <div className="mt-10 min-h-[calc(100vh_-_5rem)] bg-gradient-to-b from-gray-800 via-gray-400 to-gray-800 ">
+    <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black via-stone-900 to-black ">
       {children}
     </div>
   );

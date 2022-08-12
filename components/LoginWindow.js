@@ -6,7 +6,7 @@ export default function LoginWindow({ visible }) {
   if (!session) {
     return (
       <div
-        className={`float-right -mr-10 mt-10 p-4 bg-slate-200 border-4 border-slate-900 rounded-md ${
+        className={`float-right -mr-10 mt-10 p-4 bg-black border-4 border-white rounded-md ${
           visible ? "visible" : "hidden"
         }`}
       >
@@ -16,7 +16,7 @@ export default function LoginWindow({ visible }) {
   }
   return (
     <div
-      className={`float-right -mr-10 mt-10 p-4 bg-slate-200 border-4 border-slate-900 rounded-md ${
+      className={`font-white float-right -mr-10 mt-10 p-4 bg-slate-200 border-4 border-white rounded-md ${
         visible ? "visible" : "hidden"
       }`}
     >
