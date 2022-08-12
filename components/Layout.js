@@ -4,7 +4,7 @@ import Background from "./Background";
 
 export default function Layout({ children }) {
   return (
-    <div className="-m-2">
+    <div>
       <Navbar />
       <Background>
         <main>{children}</main>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import UserIcon from "./UserIcon";
 
-export default function () {
+export default function Navbar() {
   return (
     <>
       <nav className="absolute top-0 w-full bg-gray-900 h-10">

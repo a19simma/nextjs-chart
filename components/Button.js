@@ -1,4 +1,4 @@
-export default function ({ onclick, text }) {
+export default function Button({ onclick, text }) {
   return (
     <div>
       <div>
