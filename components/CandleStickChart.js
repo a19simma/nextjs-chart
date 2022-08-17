@@ -10,11 +10,11 @@ export default function CreateChart({ size, data }) {
   const columnOverlayRef = useRef(null);
   const cornerRef = useRef(null);
   const labelRef = useRef(null);
+  const [chart, setChart] = useState(new CandleStickChart());
 
-  let chart;
-
-  useEffect(() => {
+  function updateContext() {
     const ui_elements = [
+      canvasRef.current,
       rowRef.current,
       rowOverlayRef.current,
       columnRef.current,
@@ -23,13 +23,24 @@ export default function CreateChart({ size, data }) {
       overlayRef.current,
       labelRef.current,
     ];
-    const canvas = canvasRef.current;
-    console.log(size);
-    if (Object.entries(data).length == 0) {
-      console.error("No data");
-    } else {
-      chart = new CandleStickChart(data, canvas, size, ui_elements);
-    }
+    chart.setContext(ui_elements);
+  }
+
+  useEffect(() => {
+    updateContext();
+    chart.setSize(size);
+  }, []);
+
+  useEffect(() => {
+    updateContext();
+    chart.setData(data);
+    chart.setSize(size);
+    chart.reSize();
+  }, [data]);
+
+  useEffect(() => {
+    updateContext();
+    chart.setSize(size);
   }, [size]);
 
   return (
@@ -39,7 +50,7 @@ export default function CreateChart({ size, data }) {
           <td className="relative p-0">
             <canvas className="z-0" ref={canvasRef}></canvas>
             <canvas
-              className="z-10 absolute top-0 left-0"
+              className="z-10 absolute top-2 left-2"
               ref={labelRef}
             ></canvas>
             <canvas

@@ -1,5 +1,5 @@
 export default function Loader({ show }) {
   return show ? (
-    <div className="animate-spin rounded-full border-t-purple-500 border-4 h-5 w-5 m-2"></div>
+    <div className="relative m-auto top-1/2 animate-spin rounded-full border-transparent border-t-purple-800 border-8 w-32 h-32"></div>
   ) : null;
 }
