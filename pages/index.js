@@ -6,7 +6,13 @@ export default function Home() {
   return (
     <Layout>
       <Title>Welcome</Title>
-      <Body title="Hello There">This is the main body of the page.</Body>
+      <Body>
+        <p>
+          This is my personal website where I will showcase demos of projects
+          I've made. Have a look at the chart page above to see my charting
+          component made using html5 canvas.
+        </p>
+      </Body>
     </Layout>
   );
 }

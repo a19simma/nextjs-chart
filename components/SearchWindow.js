@@ -30,6 +30,7 @@ export default function ({ visible, setTicker }) {
   return visible ? (
     <div className="absolute z-30 left-1/4 top-2/5 w-1/2 bg-stone-800">
       <input
+        placeholder="Type to search and press enter"
         type="text"
         onInput={fetchSuggestions}
         onKeyDown={(e) => {

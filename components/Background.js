@@ -1,7 +1,5 @@
-export default function Background({ children }) {
+export default function Background() {
   return (
-    <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-black via-stone-900 to-black ">
-      {children}
-    </div>
+    <div className="fixed -z-50 top-0 left-0 min-h-full w-full bg-black"></div>
   );
 }

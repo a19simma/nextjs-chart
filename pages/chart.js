@@ -61,7 +61,8 @@ export default function Chart() {
   }, [windowSize, loading]);
 
   return (
-    <div className="bg-black py-10 w-full h-screen">
+    <div className="bg-black w-full h-full">
+      <Navbar />
       <SearchWindow visible={search} setTicker={changeTicker} />
       <div
         ref={containerRef}
@@ -70,7 +71,7 @@ export default function Chart() {
         <CandleStickChart size={size} data={data} />
       </div>
       <Loader show={loading} />
-      <Navbar />
+
       <Footer />
     </div>
   );

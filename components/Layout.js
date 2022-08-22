@@ -4,11 +4,10 @@ import Background from "./Background";
 
 export default function Layout({ children }) {
   return (
-    <div className="absolute min-w-full min-h-full">
-      <Background>
-        <main>{children}</main>
-      </Background>
+    <div className="grid grid-flow-row min-h-screen">
       <Navbar />
+      <Background />
+      <main className="py-4">{children}</main>
       <Footer />
     </div>
   );
