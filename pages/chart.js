@@ -61,17 +61,18 @@ export default function Chart() {
   }, [windowSize, loading]);
 
   return (
-    <div className="bg-black w-full h-full">
+    <div className="absolute bg-black w-full h-full">
       <Navbar />
       <SearchWindow visible={search} setTicker={changeTicker} />
       <div
         ref={containerRef}
-        className={`relative w-full h-full ${loading ? "hidden" : "visible"}`}
+        className={`relative h-[calc(100%-5rem)] ${
+          loading ? "hidden" : "visible"
+        }`}
       >
         <CandleStickChart size={size} data={data} />
       </div>
       <Loader show={loading} />
-
       <Footer />
     </div>
   );

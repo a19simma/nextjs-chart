@@ -4,7 +4,7 @@ import UserIcon from "./UserIcon";
 export default function Navbar() {
   return (
     <>
-      <nav className="top-0 left-0 w-full bg-black h-10">
+      <nav className="relative top-0 left-0 w-full bg-black h-10">
         <div className="w-full mx-auto md:w-3/5">
           <div className="">
             <Link href="/">
