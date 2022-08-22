@@ -1,7 +1,7 @@
 import { useState } from "react";
 import http from "http";
 
-export default function ({ visible, setTicker }) {
+export default function SearchWindow({ visible, setTicker }) {
   const [list, setList] = useState([]);
 
   const fetchSuggestions = (e) => {

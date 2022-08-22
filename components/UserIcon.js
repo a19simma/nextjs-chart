@@ -3,7 +3,7 @@ import UserSVG from "../public/user.svg";
 import LoginWindow from "./LoginWindow";
 import { useSession } from "next-auth/react";
 
-export default function () {
+export default function UserIcon() {
   const [visible, setVisible] = useState(false);
   const { data: session } = useSession();
 
