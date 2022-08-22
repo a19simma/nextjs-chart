@@ -1,5 +1,7 @@
 export default function Loader({ show }) {
   return show ? (
-    <div className="relative m-auto top-1/2 animate-spin rounded-full border-transparent border-t-purple-800 border-8 w-32 h-32"></div>
+    <div className="className={`relative h-[calc(100%-5rem)]">
+      <div className="relative mx-auto top-[calc(50%-6rem)] animate-spin rounded-full border-transparent border-t-purple-800 border-8 w-36 h-36"></div>
+    </div>
   ) : null;
 }
