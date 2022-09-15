@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import http from "http";
+import https from "https";
 
 import useWindowSize from "../hooks/windowResize";
 import useDocumentListener from "../hooks/documentListener";
@@ -45,8 +45,8 @@ export default function Chart() {
     if (ticker == null || ticker == "") return;
     setLoading(true);
     setSearch(false);
-    const url = `http://api.simonmalm.com/ticker/${ticker}`;
-    http.request(url, callback).end();
+    const url = `https://api.simonmalm.com/ticker/${ticker}`;
+    https.request(url, callback).end();
   };
 
   useEffect(() => {

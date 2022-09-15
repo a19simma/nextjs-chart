@@ -1,5 +1,5 @@
 import { useState } from "react";
-import http from "http";
+import https from "https";
 
 export default function SearchWindow({ visible, setTicker }) {
   const [list, setList] = useState([]);
@@ -18,9 +18,9 @@ export default function SearchWindow({ visible, setTicker }) {
       });
     }
     if (input != "") {
-      http
+      https
         .request(
-          `http://api.simonmalm.com/company/suggestions/${e.target.value}`,
+          `https://api.simonmalm.com/company/suggestions/${e.target.value}`,
           callback
         )
         .end();
